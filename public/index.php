@@ -10,18 +10,7 @@ $statement->execute();
 $activities = $statement->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-        <title>ToDo List</title>
-    </head>
+<?php include_once '../views/partials/header.php' ?>
     <body class="container text-center">
         <h1 class="m-5 text-center">Event Tracker</h1>
         <a href="create.php" class="btn btn-success">Add Event</a>
